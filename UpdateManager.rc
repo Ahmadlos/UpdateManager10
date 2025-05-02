@@ -1,0 +1,248 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\UpdateManager.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\UpdateManager_VerII.ico"
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About UpdateManager"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "UpdateManager Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_UPDATEMANAGER_DIALOG DIALOGEX 0, 0, 457, 281
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "Update Manager v2.0"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "None",IDC_COMP_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,12,33,10
+    CONTROL         "Freeze",IDC_COMP_FREEZE,"Button",BS_AUTORADIOBUTTON,12,24,38,10
+    CONTROL         "Melt",IDC_COMP_MELT,"Button",BS_AUTORADIOBUTTON,12,36,29,10
+    CONTROL         "None",IDC_NAME_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,75,12,33,10
+    CONTROL         "Decode",IDC_NAME_DECODE,"Button",BS_AUTORADIOBUTTON,75,36,40,10
+    CONTROL         "Encode",IDC_NAME_ENCODE,"Button",BS_AUTORADIOBUTTON,75,24,39,10
+    GROUPBOX        "Compress",IDC_STATIC,3,2,56,49
+    GROUPBOX        "Name Encode",IDC_STATIC,64,2,59,49
+    CONTROL         "XOR File",IDC_XOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,12,43,10
+    CONTROL         "Build Patch Info",IDC_BUILD_INDEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,24,66,10
+    CONTROL         "Build Directory",IDC_BUILD_DIRECTORY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,36,62,10
+    GROUPBOX        "Option",IDC_STATIC,127,2,82,49
+    GROUPBOX        "Update Info",IDC_STATIC,3,50,451,26
+    EDITTEXT        IDC_APP_NAME,48,58,292,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VERSION,381,57,42,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "AppName:",IDC_STATIC,12,60,34,8
+    LTEXT           "Version:",IDC_STATIC,349,58,27,8
+    GROUPBOX        "Quick Select",IDC_STATIC,213,2,82,49
+    PUSHBUTTON      "Encode",IDC_BUTTON_ENCODE,218,12,73,11
+    PUSHBUTTON      "Decode",IDC_BUTTON_DECODE,218,24,73,11
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEAR,218,35,73,11
+    CONTROL         "",IDC_LOG,"RichEdit20A",ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,2,79,454,186,WS_EX_STATICEDGE
+    PUSHBUTTON      "+",IDC_VERSION_UP,423,57,11,13
+    PUSHBUTTON      "-",IDC_VERSION_DOWN,435,57,11,13
+    EDITTEXT        IDC_STATUS,0,268,404,12,ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDC_CANCEL,404,268,51,12
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP,407,6,47,43
+    GROUPBOX        "Patch Source",IDC_STATIC,299,2,103,49
+    PUSHBUTTON      "Select Folder",IDC_BUTTON_SELECT_PATCH_SOURCE,304,12,95,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_UPDATEMANAGER_DIALOG HTML                    "UpdateManager.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "UpdateManager.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "UpdateManager.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_UPDATEMANAGER_DIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 280
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SUN                 BITMAP                  "UpdateManager_Ver2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About UpdateManager..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\UpdateManager.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
